@@ -2081,7 +2081,7 @@ void myUserFunc(Message *msg,MergCBUS *mcbus){
 // 4 Input OR Gate 8
 /********************************************************************************************/
            if  (eventVariable2 == 58){
-             if (invert != 58 && sendEvent58 == 1 && (rxEvent101 == 1 || rxEvent102 == 1 || rxEvent102 == 1 || rxEvent104 == 1)){
+             if (invert != 58 && sendEvent58 == 1 && (rxEvent101 == 1 || rxEvent102 == 1 || rxEvent103 == 1 || rxEvent104 == 1)){
                  cbus.sendOnEvent(true, logicEventNumber58);
                   sendEvent58 = 0;
                   }
@@ -2094,7 +2094,7 @@ void myUserFunc(Message *msg,MergCBUS *mcbus){
                             cbus.sendOffEvent(true, logicEventNumber58);
                               sendEvent58 = 1; 
                  } 
-                    else if (invert == 58 && sendEvent58 == 0 && rxEvent101 == 0 && rxEvent102 == 0 && rxEvent102 == 0 && rxEvent104 == 0){
+                    else if (invert == 58 && sendEvent58 == 0 && rxEvent101 == 0 && rxEvent102 == 0 && rxEvent103 == 0 && rxEvent104 == 0){
                             cbus.sendOnEvent(true, logicEventNumber58);
                               sendEvent58 = 1; 
                  } 
