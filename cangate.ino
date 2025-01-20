@@ -1932,7 +1932,7 @@ void myUserFunc(Message *msg,MergCBUS *mcbus){
                  
                   else if (invert != 52 && sendEvent52 == 0 && rxEvent77 == 0 && rxEvent78 == 0 && rxEvent79 == 0 && rxEvent80 == 0){
                             cbus.sendOffEvent(true, logicEventNumber52);
-                              sendEvent51 = 1; 
+                              sendEvent52 = 1; 
                  } 
                  else if (invert == 52 && sendEvent52 == 0 && rxEvent77 == 0 && rxEvent78 == 0 && rxEvent79 == 0 && rxEvent80 == 0){
                             cbus.sendOnEvent(true, logicEventNumber52);
