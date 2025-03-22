@@ -298,16 +298,16 @@ void setup () {
 //Configuration CBUS data for the node
 /********************************************************************************************/
 
-  cbus.getNodeId()->setNodeName("GATE",4);       	 	// node name shows in FCU when first detected set your own name for each module - max 7 characters
-  cbus.getNodeId()->setModuleId(75);               	    // module number - see cbusdefs
+  cbus.getNodeId()->setNodeName("GATE",4);       	 // node name shows in FCU when first detected set your own name for each module - max 7 characters
+  cbus.getNodeId()->setModuleId(75);               	 // module number - see cbusdefs
   cbus.getNodeId()->setManufacturerId(0xA5);        	// MERG code
-  cbus.getNodeId()->setMinCodeVersion(0x62);      		// Version a
+  cbus.getNodeId()->setMinCodeVersion(0x63);      	// Version c
   cbus.getNodeId()->setMaxCodeVersion(1);           	// version 1
   cbus.getNodeId()->setProducerNode(true);          	// Produce Node - Set True if Producer Module
-  cbus.getNodeId()->setConsumerNode(true);        		// Consumer Node = Set True if Consumer Module
-  cbus.getNodeId()->setConsumeEvents(false);      	    // consume own event COE
+  cbus.getNodeId()->setConsumerNode(true);        	// Consumer Node = Set True if Consumer Module
+  cbus.getNodeId()->setConsumeEvents(false);      	// consume own event COE
   cbus.getNodeId()->setTransportType(1);            	// 1 CAN  2 ETHERNET 3 MiWi
-  cbus.getNodeId()->setBetaRelease(1);             		// Beta Release set to zero for release version
+  cbus.getNodeId()->setBetaRelease(0);             	// Beta Release set to zero for release version
   cbus.getNodeId()->setSuportBootLoading(false);        // Allways set false - no bootloading
   cbus.getNodeId()->setCpuManufacturer(2);              // 1 MICROCHIP  2  ATMEL  3 ARM
 
