@@ -56,7 +56,7 @@ VCC         		5V
   //#define PUSH_BUTTON1 7          //debug push button
   #define NODE_VARS 1               //sets up number of NVs for module to store variables
   #define NODE_EVENTS 136           //Max Number of supported Events
-  #define EVENTS_VARS 3            //number of variables per event Maximum is 20
+  #define EVENTS_VARS 3            //number of variables per event. Set to 20 if using with CANMIO
   #define DEVICE_NUMBERS 0          //number of devices numbers connected to Arduino such as servos, relays etc. Can be used for Short events
 
 /********************************************************************************************/
