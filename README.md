@@ -1,4 +1,4 @@
-# CANGATE ver1b
+# CANGATE ver1c
  Two, Three or Four input AND 'gates'   Four input 0R 'gate' for CBUS Events.
   *  Also invert output event to cretae NAND and NOR
   *  No Arduino programming required - black box - similar to standard MERG CBUS kits
